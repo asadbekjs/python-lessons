@@ -120,3 +120,16 @@ toys.remove("dino")
 toys.append("mcqueen")
 toys = tuple(toys)
 print(toys)
+
+# 
+sonlar = list(range(120, 1200, 2))
+# boshidan 20 ta element
+print(sonlar[ : 20])
+# oxiridan 20 ta element
+print(sonlar[-20 : ])
+# o'rtasidan 20 ta element
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]
+length = len(sonlar)
+start_index = length // 2 - 10
+end_index = length // 2 + 10
+print(sonlar[start_index : end_index])
