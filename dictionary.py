@@ -62,3 +62,22 @@ telefonlar = {
 
 print(telefonlar.get('vali')) # 'galaxy s9'
 print(telefonlar.get('akmal')) # None
+
+
+# test
+print(telefonlar.get('akmal', 'Bunday ismli foydalanuvchi mavjud emas!'))
+
+# Case conversion examples (har xil case misollari)
+# String methods: .lower(), .upper(), .title(), .capitalize(), .swapcase()
+name = "joHN doE"
+print("original:", name)
+print("lower():", name.lower())
+print("upper():", name.upper())
+print("title():", name.title())
+print("capitalize():", name.capitalize())
+print("swapcase():", name.swapcase())
+
+# Case normalization for dictionary keys (masalan, foydalanuvchi ismlari)
+user_scores = {"Ali": 90, "vali": 85, "oLIm": 78}
+normalized_scores = {k.lower(): v for k, v in user_scores.items()}
+print("normalized keys:", normalized_scores)
