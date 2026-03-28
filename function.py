@@ -38,17 +38,3 @@ def yosh_hisobla(tugilgan_yil, joriy_yil=2020): # joriy yil uchun st.qiymat 2020
     print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
 
 yosh_hisobla(1995, 2020)
-
-# Amaliyot
-# 4.
-def solishtirish(a, b):
-    if a > b:
-        print(f"{a} katta {b} dan")
-    elif a < b:
-        print(f"{a} kichik {b} dan")
-    else:
-        print(f"{a} va {b} teng")
-
-solishtirish(10, 5)
-solishtirish(3, 7)
-solishtirish(4, 4)
