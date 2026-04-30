@@ -45,25 +45,40 @@ def avto_info(kompaniya, model, **malumotlar):
 print(avto_info("GM Uzbekistan", "Cobalt", rangi="Oq", narhi=120000))
 print(avto_info("Merc", "Gelikvogen", rangi="Qora", narhi=350000))
 
-def my_function(**kid):
-  print("His last name is " + kid["lname"])
+# def my_function(**kid):
+#   print("His last name is " + kid["lname"])
 
-my_function(fname = "Tobias", lname = "Refsnes")
+# my_function(fname = "Tobias", lname = "Refsnes")
 
 # Amaliyot
 # 1.
-def multiple(*numbers):
-   s = 1
-   for number in numbers:
-      s *= number
+# def multiply(*numbers):
+#    s = 1
+#    for number in numbers:
+#       s *= number
 
-   return s
+#    return s
    
-print(multiple(2, 4, 7))
+# print(multiply(2, 4, 7))
 # 2.
-def student_info(name, lastname, **data):
-    data['name'] = name
-    data['lastname'] = lastname
+# def student_info(name, lastname, **data):
+#     data['name'] = name
+#     data['lastname'] = lastname
     
-    return data
-print(student_info('Jumagul', 'Umrzoqova', year = 2005, height = 1.65))
+#     return data
+# print(student_info('Jumagul', 'Umrzoqova', year = 2005, height = 1.65))
+
+# find_max()
+def find_max(*numbers):
+    if len(numbers) == 0:
+        return None
+    max_value = numbers[0]
+    for number in numbers:
+        if number > max_value:
+            max_value = number
+
+    return max_value
+
+print(find_max(8, 15, -3, 0, 9, 12))
+print(find_max(-2, -5, -7))
+print(find_max())
